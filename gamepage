@@ -1,0 +1,66 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int Learning;
+
+int Total;
+
+// Question Class
+class Question {
+
+private:
+
+string Question_Text;
+string Answer_1;
+string Answer_2;
+string Answer_3;
+string Answer_4;
+int Correct_Answer;
+int Question_Score;
+
+public:
+    void setValues (string, string, string, string, string, int, int);
+
+    //funct. to ask a question
+    void askQuestion();
+};
+
+// Driver code
+int main()
+{
+    string str;
+    
+    getline (cin,str);
+    
+    //displaying string
+    cout << "Let's Learn!";
+    cout << str << endl;
+    
+    cout << "Press Enter to start "
+    << "learning... " << endl;
+    // Input
+    cin.get();
+    string Name;
+    int Age;
+
+// Input the details
+cout << "What is your name?" << endl;
+cin >> Name;
+cout << endl;
+cout << "How old are you?" << endl;
+cin >> Age;
+cout << endl;
+
+string Respond;
+cout << "Are you ready to start" << " learning " << Name << "? yes/no" << endl;
+cin >> Respond; 
+if (Respond == "yes") {
+    cout << endl;
+    cout << "Good Luck!" << endl;
+}
+else {
+    cout << "Okay Good Bye!" << endl;
+    return 0;
+
+}
